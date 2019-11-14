@@ -32,11 +32,11 @@
 
 ## Information handling
 
-### Task 1. Стркоковые классы
+### Task 1. [Стркоковые классы](https://github.com/VaderVega/EPAM_tasks/tree/master/src/main/java/InformationHandling/Task1)
 
 Необходимо создать класс CrazyLogger, ведущий журнал лога, используя как накопитель объект типа StringBuilder. Логгер должен содержать методы поиска определенной информации в таком логе [с возможностью вывода ее в поток ввода вывода]. Информацию логгер хранит в форматированном виде: dd-mm-YYYY : hh-mm – message;.
 
-### Task 2. Locale и ResourceBundle
+### Task 2. [Locale и ResourceBundle](https://github.com/VaderVega/EPAM_tasks/tree/master/src/main/java/InformationHandling/Task2)
 
 Разработать приложение, позволяющее по выбору пользователя использовать русский или английский язык, для отображения информации.  Приложение должно представлять собой перечень вопросов под номерами (на английском или русском соответственно). Выбрав номер вопроса пользователь может узнать ответ на него.
 
