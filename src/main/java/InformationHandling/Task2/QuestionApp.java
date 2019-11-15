@@ -1,9 +1,9 @@
 package InformationHandling.Task2;
 
 
-import java.util.Locale;
-import java.util.ResourceBundle;
-import java.util.Scanner;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Collectors;
 
 
 public class QuestionApp {
@@ -38,14 +38,23 @@ public class QuestionApp {
         }
     }
 
-    public void getChosenQuestion(int number) {
-        int chosenQuestion = sc.nextInt();
-        String str = bundle.getString(new StringBuilder().append("q").append(number).toString());
+    public void getChosenQuestion() {
+        String str = bundle.getString(new StringBuilder().append("q").append(sc.nextInt()).toString());
         System.out.println(str);
     }
 
-    public void getAnswer() {
+    public void getAllQuestions() {
+        Set<String> keys = bundle.keySet();
+        AtomicInteger num = new AtomicInteger(1);
+        List<String> questions = keys.stream().limit(7)
+                .map(x -> bundle.getString(x))
+                .peek(x -> System.out.println(num.getAndIncrement() + ". " + x))
+                .collect(Collectors.toList());
+    }
 
+    public void getAnswer() {
+        String str = bundle.getString(new StringBuilder().append("a").append(sc.nextInt()).toString());
+        System.out.println(str);
     }
 
 }
