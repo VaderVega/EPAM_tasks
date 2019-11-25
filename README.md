@@ -61,3 +61,48 @@
 ### Task 4. [Сериализация](https://github.com/VaderVega/EPAM_tasks/tree/master/src/main/java/IOStreams/Task4)
 
 Дана коллекция фильмов, содержащая информацию об актерах, снимавшихся в главных ролях (один актер мог сниматься и в нескольких фильмах). Необходимо написать приложение, позволяющее при запуске восстанавливать коллекцию фильмов, позволять ее модифицировать, а по завершении работы приложения – сохранять (в файл). Для восстановления/сохранения коллекции использовать  сериализацию/десериализацию.
+
+## Exceptions and Errors
+
+### Task 1. [Обработка исключительных ситуаций](https://github.com/VaderVega/EPAM_tasks/tree/master/src/main/java/ExceptionsAndErrors/Task1)
+
+Разработать приложение, позволяющее просматривать файлы и каталоги файловой системы, а также создавать и удалять текстовые файлы. Для работы с текстовыми файлами необходимо реализовать функциональность записи (дозаписи) в файл. Требуется определить исключения для каждого слоя приложения и корректно их обработать.
+
+### Task 2. [Обработка исключительных ситуаций](https://github.com/VaderVega/EPAM_tasks/tree/master/src/main/java/ExceptionsAndErrors/Task2)
+
+Создать “универсальный” класс, позволяющий получить значение из любого properties-файла. Физическое чтение файла должно происходить только один раз. Обработайте следующие исключительные ситуации: нет файла *.properties, нет ключа в properties-файле.
+
+## Generics and Collections
+
+### Task 1. [Классы коллекций](https://github.com/VaderVega/EPAM_tasks/tree/master/src/main/java/GenericsAndCollections/Task1)
+
+Изучите классы реализации коллекций и заполните следующую таблицу
+
+| Class | Ordering | Random Access | Key-Value Pairs | Allows Duplicates | Allows Null Values | Thread Safe | Blocking Operations |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+|   |   |   |   |   |   |   |   |
+
+### Task 2. [Использование Map](https://github.com/VaderVega/EPAM_tasks/tree/master/src/main/java/GenericsAndCollections/Task2)
+
+Создать “универсальный” класс, позволяющий получить значение из любого properties-файла. Физическое чтение файла должно происходить только один раз. Результаты чтения храните в коллекции типа Map. Ответьте на вопрос: как ведет себя map-коллекция если в нее добавить элемент с ключом, который уже присутствует?
+
+### Task 3. [Ссылки на коллекций](https://github.com/VaderVega/EPAM_tasks/tree/master/src/main/java/GenericsAndCollections/Task3)
+Определена иерархия классов
+```Java
+class MedicalStaff{}
+class Doctor extends MedicalStaff{}
+class Nurse extends MedicalStaff{}
+class HeadDoctor extends Doctor{}
+```
+Укажите корректные и некорректные операторы. Дайте ответу пояснение.
+
+### Task 4. [Применение коллекций](https://github.com/VaderVega/EPAM_tasks/tree/master/src/main/java/GenericsAndCollections/Task4)
+
+Заполните таблицу.
+
+|   | Основная функциональность | Примеры типичного использования |
+| --- | --- | --- |
+| Set |  |  |
+| List |  |  |
+| Queue |  |  |
+| Map |  |    |
