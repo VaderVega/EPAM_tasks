@@ -18,16 +18,36 @@
                 </configuration>
             </plugin>
         </plugins>
+
+
     </build>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>8</java.version>
-        <lombok.version>1.18.6</lombok.version>
+        <lombok.version>1.18.10</lombok.version>
+        <vavr.version>0.10.2</vavr.version>
         <junit.version>4.12</junit.version>
         <maven.compiler.plugin.version>3.8.0</maven.compiler.plugin.version>
+
+        <lombok-maven-plugin.version>${lombok.version}.0</lombok-maven-plugin.version>
+        <lombok.verbose>true</lombok.verbose>
+        <lombok.addOutputDirectory>false</lombok.addOutputDirectory>
+        <lombok.sourceDirectory>${project.basedir}/src/main/java</lombok.sourceDirectory>
+        <lombok.testSourceDirectory>${project.basedir}/src/test/java</lombok.testSourceDirectory>
+
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.vavr</groupId>
+                <artifactId>vavr</artifactId>
+                <version>${vavr.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <dependencies>
         <dependency>
@@ -36,7 +56,27 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>io.vavr</groupId>
+            <artifactId>vavr</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.1-901-1.jdbc4</version>
+        </dependency>
     </dependencies>
+
+
 
 
 </project>
