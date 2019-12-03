@@ -20,6 +20,7 @@ public class BookDAOTest {
     private BookDAO bookDAO;
     private ConnectionPool connectionPool;
 
+
     @Before
     public void setupObjects() {
         book = new Book("Harper Lee", "To kill a mockingbird", "Novel", 1);

@@ -54,6 +54,8 @@ public class BookDAO {
         query = "SELECT author FROM homelibrary WHERE name='" + book.getName() + "'";
         String author = "";
 
+
+
         try (Statement statement = connection.createStatement()) {
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next())
