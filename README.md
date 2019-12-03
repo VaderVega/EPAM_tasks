@@ -265,6 +265,6 @@ class IntegerSetterGetter extends Thread {
 * вставьте новую запись в таблицу;
 * удалите таблицу.
 
-### Task 2. [DAO&ConnectionPool](https://github.com/VaderVega/EPAM_tasks/tree/master/src/main/java/JDBC/Task1)
+### Task 2. [DAO&ConnectionPool](https://github.com/VaderVega/EPAM_tasks/tree/master/src/main/java/JDBC/Task2)
 
 Спроектируйте БД, хранящую информацию, например, о домашней библиотеке. Реализуйте функциональность добавления, поиска и удаления разнообразной информации из этой БД. При реализации используйте (напишите) пул соединений и DAO.
